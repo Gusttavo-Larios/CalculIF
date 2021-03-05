@@ -5,18 +5,17 @@ import styles from "../styles/pages/Home.module.css";
 
 //components
 import Menu from "../components/Menu";
-import Calculator from "../components/Calculator";
+import CalculatorAvarageYear from "../components/CalculatorAverageYear";
 
-export default function Home() {
+export default function AverageAnual() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Calculif | Home</title>
+        <title>Calculif | Média anual</title>
         <link rel="icon" href="/beca.ico" />
       </Head>
-
       <Menu />
-      <Calculator />
+      <CalculatorAvarageYear />
     </div>
   );
 }
