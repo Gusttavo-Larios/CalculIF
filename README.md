@@ -32,7 +32,7 @@ $ yarn dev
 
 - [x] Calcular média bimestral
 - [x] Calcular média anual
-- [ ] Calcular média necessária no último bimestre
+- [x] Calcular média necessária no último bimestre
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)
 
