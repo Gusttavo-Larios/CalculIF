@@ -36,7 +36,7 @@ export default function CalculatorTheLastAvarage() {
       result = Number(result.toFixed(2));
 
       if (60 - result > 30) {
-        setMessage("Está de PF, você precisa");
+        setMessage("Está de PF, você precisa de");
         setIsUpAverage("#ff635e");
       } else {
         setMessage("Você precisa de apenas");
