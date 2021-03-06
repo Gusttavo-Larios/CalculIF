@@ -60,7 +60,7 @@ Dê uma ⭐️ se esse projeto te ajudou!
 
 ## Autor
 
-<img width="64px" border-radius="32px" src="https://avatars.githubusercontent.com/u/72306241?s=460&u=0b8ef2e0717d25df7f5cb5a783a1fe450beeb5d6&v=4">
+<img width="128px" border-radius="32px" src="https://avatars.githubusercontent.com/u/72306241?s=460&u=0b8ef2e0717d25df7f5cb5a783a1fe450beeb5d6&v=4">
 <h4>Gustavo Lários☕</h4>
 <p>Feito por Gustavo Lários</p>
 # CalculIF
