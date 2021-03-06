@@ -9,8 +9,6 @@ export default function CalculatorTheLastAvarage() {
   const [valueAvarageThree, setValueAvarageThree] = useState(" ");
 
   const [isCalculeted, setIsCalculeted] = useState(false);
-  const [average, setAverage] = useState(0);
-  const [theLastAverage, setTheLastAverage] = useState(0);
   const [isUpAverage, setIsUpAverage] = useState("#246769");
 
   const [message, setMessage] = useState("");
@@ -18,6 +16,9 @@ export default function CalculatorTheLastAvarage() {
   let avarageOne = Number(valueAvarageOne);
   let avarageTwo = Number(valueAvarageTwo);
   let avarageThree = Number(valueAvarageThree);
+
+  const [average, setAverage] = useState(0);
+  const [theLastAverage, setTheLastAverage] = useState(0);
 
   function calculatorTheLastAvarage() {
     if (
@@ -30,24 +31,21 @@ export default function CalculatorTheLastAvarage() {
     ) {
       alert("Valor inválido!");
     } else {
-      let result =
-        ((avarageOne + avarageTwo) * 2 + (avarageThree + 0) * 3) / 10;
+      let result = (avarageOne + avarageTwo) * 2 + (avarageThree + 0) * 3;
 
-      setAverage(Number(result.toFixed(2)));
+      result = Number(result.toFixed(2));
 
-      const aux = 6 - Number(result.toFixed(2));
-      setTheLastAverage(aux);
-
-      console.log(average, theLastAverage, Number(result.toFixed(2)));
-
-      if (theLastAverage > 3) {
-        setMessage("Você está de prova final");
+      if (60 - result > 30) {
+        setMessage("Está de PF, você precisa");
         setIsUpAverage("#ff635e");
       } else {
-        setMessage("Você passou de ano");
+        setMessage("Você precisa de apenas");
         setIsUpAverage("#246769");
       }
 
+      const n = Number((6 - result / 10).toFixed(2));
+
+      setTheLastAverage(n);
       setIsCalculeted(true);
     }
   }
